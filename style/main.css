@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+#iconBox {
+    /* position: */
+    border: 1px solid black;
+    width: 30%;
+    height: 30%;
+}
