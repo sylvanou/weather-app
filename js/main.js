@@ -14,6 +14,7 @@ var convert = document.querySelector('.convert')
 var icon = document.querySelector('#iconBox')
 var temper
 var state = true
+var desc = document.querySelector('.description');
 
 function kelvinToFahrenheit(kelvin){
         return Math.round(kelvin * (9/5) - 459.67)
@@ -52,10 +53,11 @@ function getWeather(zipCode){
         url: `${api_root}${zipCode},us&appid=${api_key}`,
         dataType: 'json',
         success: function(data){
+            desc.innerHTML = data.weather["0"].description;
             addIcon(data.weather["0"].main)
-            console.log(data)
+            // console.log(data)
             temper = kelvinToFahrenheit(data.main.temp)
-            console.log(data.weather["0"].main)
+            // console.log(data.weather["0"].main)
             weather.textContent = data.weather["0"].main
             city_name.textContent = data.name
             temp.innerHTML = `${temper} &deg F`
@@ -69,7 +71,7 @@ function getWeather(zipCode){
 }
 
 console.log(convert)
-getWeather(33166)
+getWeather(33196)
 
 zip.addEventListener('keypress', function(e){
     if(e.keyCode == 13){

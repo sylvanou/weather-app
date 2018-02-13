@@ -1,16 +1,65 @@
-body {
-    text-align: center;
-}
+    body {
+        text-align: center;
+        background-color: #80ced6;
+        text-transform: uppercase;
+    }
 
-.container {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0rem 2rem 0rem;
-}
 
-#iconBox {
-    /* position: */
-    border: 1px solid black;
-    width: 30%;
-    height: 30%;
-}
+    .container {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+
+    #city_name {
+        font-size: 30px;
+        font-weight: 900px;
+    }
+
+    .weather {
+        height: 10px;
+        font-size: 30px;
+        font-weight: 700px;
+    }
+    #iconBox {
+        /* position: */
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 30px;
+        width: 230px;
+        height: 230px;
+    }
+
+    .searchBox {
+        font-size: 20px;
+        width: 200px;
+        height: 30px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 30px;
+        text-transform: uppercase;
+    }
+
+    .description {
+        font-size: 14px;
+        font-weight: 700px;
+    }
+    .temp {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .convert {
+        background: #ddd;
+        border-radius: 5px;
+        box-shadow: 2px 3px 1px #666;
+        width: 115px;
+        height: 25px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .humid {
+        font-size: 20px;
+        font-weight: bolder;
+    }
