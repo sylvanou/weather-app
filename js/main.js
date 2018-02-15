@@ -33,7 +33,7 @@ function addIcon(w){
     if (w == "Partly-cloudy" || w == "Smoke") {
         icon.src = 'img/partlyCloudy.png'
     }
-    if (w == "Rain") {
+    if (w == "Rain" || w == "Drizzle") {
         icon.src ="img/rain.png"
     }
     if (w == "Snow") {
